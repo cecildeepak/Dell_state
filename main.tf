@@ -50,8 +50,8 @@ resource "null_resource" "changes" {
     destination = "/home/ubuntu/test.sh"
   }
   provisioner "remote-exec" {
-    inline = ["sudo chmod +x /home/ubuntu/test.sh"],
-              "sh /home/ubuntu/test.sh"
+    inline = ["sudo chmod +x /home/ubuntu/test.sh",
+              "sh /home/ubuntu/test.sh"]
 
   }
 }
